@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS source_locations (
+    id SERIAL PRIMARY KEY,
+    location VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    frequency INTEGER DEFAULT 1
+);
